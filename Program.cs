@@ -11,7 +11,7 @@ namespace ОС_лаб_1
 {
     class Program
     {
-        public static void TextFile()
+        public static void TextFile()//создаем текстовый файл, делаем запись в нем, сохраняем, читаем и сразу удаляем
         {
             string path = @"D:\SomeDir2\\";  // создаем каталог для файла
             DirectoryInfo dirInfo = new DirectoryInfo(path);
@@ -45,7 +45,7 @@ namespace ОС_лаб_1
             public string Name { get; set; }
             public int Age { get; set; }
         }
-        public static async void JsonFile()
+        public static async void JsonFile() //создаем json файл, делаем запись в нем, сохраняем, читаем и сразу удаляем
         {
             string path = @"D:\\user\\";
             DirectoryInfo dirInfo = new DirectoryInfo(path);
@@ -80,7 +80,7 @@ namespace ОС_лаб_1
             public string Country { get; set; }
             public int RulingAges { get; set; }
         }
-        public static void XmlFile()
+        public static void XmlFile() //создаем xml файл, делаем запись в нем, сохраняем, читаем и сразу удаляем
         {
             string path = @"D:\\xml-файл\\"; //создаем каталог
             if (File.Exists($"{path}Presidents.xml"))
@@ -159,7 +159,7 @@ namespace ОС_лаб_1
             File.Delete($"{path}\\Presidents.xml");
             Console.WriteLine("Файл удален");
         }
-        public static void ZipWork()
+        public static void ZipWork() //создаем архив, добавляем в него файл, извлекаем архив и удаляем его и каталог, куда извлекли содержимое
         {
             string startPath = @"D:\\zipFile";      //расположение папки для архивации
             string zipPath = @"D:\\result.zip";     //куда сохранять архив
