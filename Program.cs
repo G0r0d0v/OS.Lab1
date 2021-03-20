@@ -4,7 +4,6 @@ using System.Text.Json;
 using System.Xml;
 using System.Text;
 using System.IO.Compression;
-
 //РАБОТУ ВЫПОЛНИЛ СТУДЕНТ ГРУППЫ БББО-07-19 ГОРОДОВ М.А.
 //2021г.
 
@@ -162,7 +161,6 @@ namespace ОС_лаб_1
         }
         public static void ZipWork()
         {
-
             string startPath = @"D:\\zipFile";      //расположение папки для архивации
             string zipPath = @"D:\\result.zip";     //куда сохранять архив
             string extractPath = @"D:\\extract";    //куда извлекать архив
